@@ -365,6 +365,213 @@ p {
   color: var(--clr-text-muted);
 }
 
+/* ── TEAM & CAREER ──────────── */
+
+.mission-vision {
+  margin-bottom: 4rem;
+}
+
+.mission-card, .vision-card {
+  padding: 2.5rem;
+}
+
+.mission-card h3, .vision-card h3 {
+  color: var(--clr-accent);
+  margin-bottom: 1rem;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.team-card__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-light);
+  color: var(--clr-accent);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--clr-border);
+}
+
+.team-card__meta h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--clr-accent);
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  font-size: 0.925rem;
+  color: var(--clr-text-secondary);
+}
+
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.job-card h3 {
+  font-size: 1.35rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-meta {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--clr-text-muted);
+  margin-bottom: 1rem;
+}
+
+.job-description {
+  font-size: 0.95rem;
+}
+
+
+.apply-form-wrap {
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: var(--clr-bg-alt);
+  border: 1px solid var(--clr-border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.apply-header {
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.apply-header h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.apply-form textarea {
+  background-color: var(--clr-surface);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+
+.apply-form textarea:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(91, 79, 233, 0.15);
+}
+
+.apply-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-row-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.apply-form .btn {
+  align-self: flex-start;
+  padding: 0.85rem 2rem;
+}
+
+
+.form-file-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-label__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--clr-text-primary);
+}
+
+.required-star {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.file-label__sub {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+  margin-top: 0.15rem;
+}
+
+
+.apply-form input[type="file"] {
+  padding: 0.5rem;
+  background-color: var(--clr-surface);
+  cursor: pointer;
+}
+
+
+.apply-form input[type="file"]::file-selector-button {
+  border: 1px solid var(--clr-border);
+  background-color: var(--clr-bg-alt);
+  color: var(--clr-text-primary);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.apply-form input[type="file"]::file-selector-button:hover {
+  background-color: var(--clr-border);
+}
+
+
+@media (max-width: 768px) {
+  .apply-form-wrap {
+    padding: 1.75rem;
+  }
+  
+  .form-row-two {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .apply-form .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* ── 6. RESPONSIVE DESIGN ────────────────────────────────── */
 @media (max-width: 1024px) {
 
